@@ -1,7 +1,12 @@
 const menuBtn = document.querySelector(".menu-btn");
-
+const menu = document.querySelector(".header__menu");
 const toggleBtns = document.querySelectorAll(".person__btn");
 const personsInfo = document.querySelectorAll(".person");
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("visible");
+  menuBtn.classList.toggle("close");
+});
 
 toggleBtns.forEach((btn) =>
   btn.addEventListener("click", (e) => {

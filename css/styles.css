@@ -151,7 +151,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 header {
@@ -169,6 +169,7 @@ header {
 @media screen and (max-width: 1280px) {
   header {
     justify-content: space-between;
+    padding-top: 22px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -236,21 +237,22 @@ header {
   scale: 1.1;
 }
 
-.menu-btn,
-.header__menu {
-  display: none;
-}
-
 .menu-btn {
+  display: none;
+  position: absolute;
   flex-direction: column;
   align-items: end;
   gap: 3px;
+  top: 23px;
+  right: 20px;
+  z-index: 21;
 }
 .menu-btn div {
   width: 19px;
   height: 3px;
   border-radius: 10px;
   background-color: var(--white);
+  transition: all 150ms ease;
 }
 .menu-btn div:first-of-type {
   width: 14px;
@@ -259,6 +261,79 @@ header {
   .menu-btn {
     display: flex;
   }
+}
+
+.menu-btn.close div:first-of-type {
+  width: 19px;
+  position: absolute;
+  top: 0;
+  rotate: 45deg;
+}
+.menu-btn.close div:last-of-type {
+  position: absolute;
+  top: 0;
+  rotate: -45deg;
+}
+
+.header__menu {
+  width: 100vh;
+  height: 100vh;
+  translate: 0 -100%;
+  padding: 19px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  transition: translate 400ms ease;
+}
+.header__menu span {
+  font-size: 26px;
+  line-height: 105%;
+}
+.header__menu .menu__navigation {
+  margin-top: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 20px;
+  line-height: 105%;
+}
+.header__menu .menu__navigation a {
+  transition: filter 250ms ease;
+}
+.header__menu .menu__navigation a:hover {
+  filter: brightness(0.7);
+}
+.header__menu .menu__socials {
+  margin-top: 70px;
+  display: flex;
+  gap: 15px;
+}
+.header__menu .menu__socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--green);
+  transition: filter 250ms ease;
+}
+.header__menu .menu__socials a svg {
+  transition: all 250ms ease;
+}
+.header__menu .menu__socials a:hover {
+  filter: brightness(0.8);
+}
+.header__menu .menu__socials a:hover svg {
+  scale: 1.1;
+}
+
+.header__menu.visible {
+  translate: 0 0;
 }
 
 .hero {
