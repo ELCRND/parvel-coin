@@ -1,0 +1,76 @@
+.buy {
+  min-height: 818px;
+  padding-top: 50px;
+  padding-bottom: 148px;
+  background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
+  position: relative;
+  color: var(--white);
+  text-transform: uppercase;
+
+  &::before {
+    content: url("../../public/img/buy/buy_stroke.png");
+    position: absolute;
+    top: 168px;
+    right: 0;
+    mix-blend-mode: overlay;
+  }
+
+  &::after {
+    content: url("../../public/img/buy/buy_img.png");
+    position: absolute;
+    top: -67px;
+    right: 0;
+  }
+}
+
+.buy__title {
+  font-size: 60px;
+  line-height: 105%;
+}
+
+.buy__subitle {
+  font-size: 24px;
+  line-height: 105%;
+}
+
+.buy__steps {
+  max-width: 502px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.step__title {
+  margin-bottom: 7px;
+  padding-left: 32px;
+  font-size: 26px;
+  line-height: 105%;
+  position: relative;
+
+  &::before {
+    content: url("../../public/img/buy/buy_mark.png");
+    position: absolute;
+    top: -4px;
+    left: 0;
+    mix-blend-mode: overlay;
+  }
+}
+
+.step__text {
+  font-size: 22px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.step__text-accent {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+
+  &::before {
+    content: url("../../public/img/buy/buy_accent_bg.png");
+    position: absolute;
+    bottom: -9px;
+    mix-blend-mode: overlay;
+  }
+}

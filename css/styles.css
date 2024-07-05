@@ -292,6 +292,7 @@ header {
   background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
   position: relative;
   color: var(--white);
+  text-transform: uppercase;
 }
 .tokenomics::before {
   content: url("../../public/img/tokenomics/stroke.png");
@@ -305,6 +306,197 @@ header {
   position: absolute;
   top: -34px;
   right: 0;
+}
+
+.tokenomics__title {
+  font-size: 60px;
+  line-height: 105%;
+}
+
+.tokenomics__subtitle {
+  font-size: 24px;
+  line-height: 105%;
+}
+
+.tokenomics__statistics {
+  margin-top: 154px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  font-size: 26px;
+  line-height: 105%;
+}
+
+.tokenomics__total {
+  margin-top: 165px;
+  position: relative;
+}
+.tokenomics__total::before {
+  content: url("../../public/img/tokenomics/tokenomics_total_bg.png");
+  position: absolute;
+  bottom: -21px;
+  left: -16px;
+  mix-blend-mode: soft-light;
+}
+.tokenomics__total::after {
+  content: url("../../public/img/tokenomics/mark.png");
+  position: absolute;
+  top: 22px;
+  left: 254px;
+  mix-blend-mode: screen;
+}
+.tokenomics__total span {
+  display: block;
+  font-size: 44px;
+  line-height: 105%;
+  color: #fff;
+}
+.tokenomics__total span:first-of-type {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.roadmap {
+  min-height: 960px;
+  padding-top: 150px;
+  padding-bottom: 170px;
+  color: var(--white);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.roadmap .application {
+  max-width: 515px;
+  min-height: 527px;
+  padding: 37px 40px;
+  border-radius: 30px;
+  background-color: #111;
+  background-image: url("../../public/img/roadmap/application_bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.roadmap .application .application__title {
+  margin-bottom: 213px;
+  font-size: 42px;
+  line-height: 105%;
+}
+.roadmap .application .application__feauteres {
+  width: fit-content;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.roadmap .application .application__feauteres li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+.roadmap .application .application__feauteres li ::before {
+  content: url("../../public/img/roadmap/mark.png");
+  position: absolute;
+  top: -5px;
+  left: -33px;
+  z-index: -1;
+}
+
+.application:nth-child(2) li:nth-child(3) ::before,
+.application:nth-child(2) li:nth-child(4) ::before {
+  content: url("../../public/img/roadmap/mark_disabled.png");
+}
+
+.application:nth-child(3) li:nth-child(1n) ::before {
+  content: url("../../public/img/roadmap/mark_disabled.png");
+}
+
+.roadmap__title {
+  width: 100%;
+  font-size: 60px;
+  line-height: 105%;
+}
+
+.roadmap__swiper {
+  margin-top: 50px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.buy {
+  min-height: 818px;
+  padding-top: 50px;
+  padding-bottom: 148px;
+  background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
+  position: relative;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.buy::before {
+  content: url("../../public/img/buy/buy_stroke.png");
+  position: absolute;
+  top: 168px;
+  right: 0;
+  mix-blend-mode: overlay;
+}
+.buy::after {
+  content: url("../../public/img/buy/buy_img.png");
+  position: absolute;
+  top: -67px;
+  right: 0;
+}
+
+.buy__title {
+  font-size: 60px;
+  line-height: 105%;
+}
+
+.buy__subitle {
+  font-size: 24px;
+  line-height: 105%;
+}
+
+.buy__steps {
+  max-width: 502px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.step__title {
+  margin-bottom: 7px;
+  padding-left: 32px;
+  font-size: 26px;
+  line-height: 105%;
+  position: relative;
+}
+.step__title::before {
+  content: url("../../public/img/buy/buy_mark.png");
+  position: absolute;
+  top: -4px;
+  left: 0;
+  mix-blend-mode: overlay;
+}
+
+.step__text {
+  font-size: 22px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.step__text-accent {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+}
+.step__text-accent::before {
+  content: url("../../public/img/buy/buy_accent_bg.png");
+  position: absolute;
+  bottom: -9px;
+  mix-blend-mode: overlay;
 }
 
 /*# sourceMappingURL=styles.css.map */

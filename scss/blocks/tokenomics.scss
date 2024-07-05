@@ -6,6 +6,7 @@
   background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
   position: relative;
   color: var(--white);
+  text-transform: uppercase;
 
   &::before {
     content: url("../../public/img/tokenomics/stroke.png");
@@ -20,5 +21,57 @@
     position: absolute;
     top: -34px;
     right: 0;
+  }
+}
+
+.tokenomics__title {
+  font-size: 60px;
+  line-height: 105%;
+}
+
+.tokenomics__subtitle {
+  font-size: 24px;
+  line-height: 105%;
+}
+
+.tokenomics__statistics {
+  margin-top: 154px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  font-size: 26px;
+  line-height: 105%;
+}
+
+.tokenomics__total {
+  margin-top: 165px;
+  position: relative;
+
+  &::before {
+    content: url("../../public/img/tokenomics/tokenomics_total_bg.png");
+    position: absolute;
+    bottom: -21px;
+    left: -16px;
+    mix-blend-mode: soft-light;
+  }
+  &::after {
+    content: url("../../public/img/tokenomics/mark.png");
+    position: absolute;
+    top: 22px;
+    left: 254px;
+    mix-blend-mode: screen;
+  }
+
+  span {
+    display: block;
+    font-size: 44px;
+    line-height: 105%;
+    color: #fff;
+
+    &:first-of-type {
+      font-size: 36px;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
