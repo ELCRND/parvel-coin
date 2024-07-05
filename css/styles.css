@@ -462,8 +462,6 @@ header {
 }
 @media screen and (max-width: 1280px) {
   .about .about__title {
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 34px;
   }
 }
