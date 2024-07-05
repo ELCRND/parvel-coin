@@ -127,6 +127,15 @@
   height: 51px;
   border-radius: 50%;
   background-color: #474747;
+  transition: background-color 250ms ease, filter 250ms ease;
+
+  &:hover {
+    background-color: var(--green);
+  }
+
+  &:active {
+    filter: brightness(0.8);
+  }
 }
 
 .swiper-navigation-next {
