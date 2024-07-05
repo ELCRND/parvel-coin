@@ -3,6 +3,13 @@ const menu = document.querySelector(".header__menu");
 const toggleBtns = document.querySelectorAll(".person__btn");
 const personsInfo = document.querySelectorAll(".person");
 
+document.querySelectorAll(".menu__link").forEach((link) =>
+  link.addEventListener("click", () => {
+    menu.classList.remove("visible");
+    menuBtn.classList.remove("close");
+  })
+);
+
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("visible");
   menuBtn.classList.toggle("close");

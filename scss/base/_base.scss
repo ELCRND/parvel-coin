@@ -9,6 +9,10 @@
   --green: #318911;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--black);
