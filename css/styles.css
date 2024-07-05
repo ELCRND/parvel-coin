@@ -276,7 +276,7 @@ header {
 }
 
 .header__menu {
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   translate: 0 -100%;
   padding: 19px 20px;
