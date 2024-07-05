@@ -1,0 +1,24 @@
+.tokenomics {
+  width: 100%;
+  min-height: 818px;
+  padding-top: 50px;
+  padding-bottom: 86px;
+  background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
+  position: relative;
+  color: var(--white);
+
+  &::before {
+    content: url("../../public/img/tokenomics/stroke.png");
+    position: absolute;
+    top: -100px;
+    right: 0;
+    mix-blend-mode: overlay;
+  }
+
+  &::after {
+    content: url("../../public/img/tokenomics/tokenomics_img.png");
+    position: absolute;
+    top: -34px;
+    right: 0;
+  }
+}

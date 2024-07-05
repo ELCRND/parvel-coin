@@ -1,0 +1,310 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+ul,
+ol,
+ul li,
+ol li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+a:focus,
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --font-family: "Jockey One", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--black);
+}
+
+.container {
+  width: min(100%, 1280px);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: min(100%, 1380px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: min(100%, 960px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding-top: 35px;
+  padding-left: 75px;
+  padding-right: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 70px;
+  font-size: 20px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+.navigation__list .navigation__item:nth-child(3) {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 42px;
+}
+
+.header__socials {
+  position: absolute;
+  right: 75px;
+  display: flex;
+  gap: 15px;
+}
+.header__socials button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #318911;
+}
+
+.hero {
+  min-height: 1150px;
+  padding-top: 221px;
+  background-color: aquamarine;
+}
+.hero .hero__title {
+  max-width: 1194px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 130px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+.hero .hero__btn {
+  width: 232px;
+  height: 61px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 7px 7px 0 var(--black);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.hero .hero__btn:active {
+  translate: 7px 7px;
+  box-shadow: none;
+}
+.hero .hero__gallery {
+  margin-top: 55px;
+  display: flex;
+}
+
+.about {
+  padding-top: 160px;
+  padding-bottom: 270px;
+  color: var(--white);
+}
+.about .about__title {
+  font-size: 60px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
+.about__persons {
+  margin-top: 77px;
+  display: flex;
+  gap: 86px;
+}
+.about__persons .persons__toggler {
+  max-width: 278px;
+  display: grid;
+  row-gap: 48px;
+  column-gap: 58px;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+}
+.about__persons .persons__info .person__title {
+  margin-bottom: 7px;
+  font-family: var(--second-family);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 145%;
+}
+.about__persons .person__description {
+  margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-size: 22px;
+  line-height: 145%;
+}
+.about__persons .person__kids {
+  display: flex;
+  align-items: center;
+}
+.about__persons .person__kids span {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.about__persons .person__kids span:first-of-type {
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.tokenomics {
+  width: 100%;
+  min-height: 818px;
+  padding-top: 50px;
+  padding-bottom: 86px;
+  background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
+  position: relative;
+  color: var(--white);
+}
+.tokenomics::before {
+  content: url("../../public/img/tokenomics/stroke.png");
+  position: absolute;
+  top: -100px;
+  right: 0;
+  mix-blend-mode: overlay;
+}
+.tokenomics::after {
+  content: url("../../public/img/tokenomics/tokenomics_img.png");
+  position: absolute;
+  top: -34px;
+  right: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

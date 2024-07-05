@@ -1,0 +1,56 @@
+.about {
+  padding-top: 160px;
+  padding-bottom: 270px;
+  color: var(--white);
+
+  .about__title {
+    font-size: 60px;
+    line-height: 105%;
+    text-transform: uppercase;
+  }
+}
+
+.about__persons {
+  margin-top: 77px;
+  display: flex;
+  gap: 86px;
+
+  .persons__toggler {
+    max-width: 278px;
+    display: grid;
+    row-gap: 48px;
+    column-gap: 58px;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
+  .persons__info {
+    .person__title {
+      margin-bottom: 7px;
+      font-family: var(--second-family);
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 145%;
+    }
+  }
+
+  .person__description {
+    margin-bottom: 32px;
+    font-family: var(--second-family);
+    font-size: 22px;
+    line-height: 145%;
+  }
+
+  .person__kids {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 26px;
+      text-transform: uppercase;
+
+      &:first-of-type {
+        margin-left: 15px;
+        margin-right: auto;
+      }
+    }
+  }
+}

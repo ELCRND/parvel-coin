@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-family: "Jockey One", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--black);
+}
+
+.container {
+  width: min(100%, 1280px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1440px) {
+    width: min(100%, 1380px);
+  }
+  @media screen and (max-width: 1024px) {
+    width: min(100%, 960px);
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.hidden {
+  display: none;
+}

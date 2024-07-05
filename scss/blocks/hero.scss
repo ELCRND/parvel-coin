@@ -1,0 +1,39 @@
+.hero {
+  min-height: 1150px;
+  padding-top: 221px;
+  background-color: aquamarine;
+
+  .hero__title {
+    max-width: 1194px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 130px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .hero__btn {
+    width: 232px;
+    height: 61px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 7px 7px 0 var(--black);
+    font-size: 32px;
+    text-transform: uppercase;
+
+    &:active {
+      translate: 7px 7px;
+      box-shadow: none;
+    }
+  }
+
+  .hero__gallery {
+    margin-top: 55px;
+    display: flex;
+  }
+}
