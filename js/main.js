@@ -10,7 +10,6 @@ menuBtn.addEventListener("click", () => {
 
 toggleBtns.forEach((btn) =>
   btn.addEventListener("click", (e) => {
-    e.stopPropagation();
     const contentType = e.target.parentNode.getAttribute("data-type");
     toggleBtns.forEach((b) => b.classList.remove("active-btn"));
     e.target.parentNode.classList.add("active-btn");
