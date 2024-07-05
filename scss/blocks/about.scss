@@ -2,11 +2,20 @@
   padding-top: 160px;
   padding-bottom: 270px;
   color: var(--white);
+  @media screen and (max-width: 1280px) {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
 
   .about__title {
     font-size: 60px;
     line-height: 105%;
     text-transform: uppercase;
+    @media screen and (max-width: 1280px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 34px;
+    }
   }
 }
 
@@ -14,6 +23,11 @@
   margin-top: 77px;
   display: flex;
   gap: 86px;
+  @media screen and (max-width: 1280px) {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 35px;
+  }
 
   .persons__toggler {
     max-width: 278px;
@@ -21,6 +35,28 @@
     row-gap: 48px;
     column-gap: 58px;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+
+    @media screen and (max-width: 1280px) {
+      display: flex;
+      gap: 27px;
+    }
+
+    button {
+      border: 3px solid #6f6f6f;
+      border-radius: 50%;
+      overflow: hidden;
+      @media screen and (max-width: 1280px) {
+        min-width: 60px;
+        height: 60px;
+        display: flex;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
   }
 
   .persons__info {
@@ -30,6 +66,9 @@
       font-size: 34px;
       font-weight: 700;
       line-height: 145%;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -38,6 +77,9 @@
     font-family: var(--second-family);
     font-size: 22px;
     line-height: 145%;
+    @media screen and (max-width: 768px) {
+      font-size: 15px;
+    }
   }
 
   .person__kids {
@@ -46,6 +88,9 @@
     span {
       font-size: 26px;
       text-transform: uppercase;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
 
       &:first-of-type {
         margin-left: 15px;
@@ -53,4 +98,8 @@
       }
     }
   }
+}
+
+.persons__toggler button.active-btn {
+  border: 6px solid #4acf19;
 }

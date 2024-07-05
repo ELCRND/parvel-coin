@@ -8,12 +8,22 @@
   color: var(--white);
   text-transform: uppercase;
 
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
   &::before {
     content: url("../../public/img/tokenomics/stroke.png");
     position: absolute;
     top: -100px;
     right: 0;
     mix-blend-mode: overlay;
+    @media screen and (max-width: 768px) {
+      content: url("../../public/img/tokenomics/stroke_mobile.png");
+      top: auto;
+      bottom: -12px;
+    }
   }
 
   &::after {
@@ -21,17 +31,28 @@
     position: absolute;
     top: -34px;
     right: 0;
+    @media screen and (max-width: 768px) {
+      content: url("../../public/img/tokenomics/tokenomics_img_mobile.png");
+      top: auto;
+      bottom: -13px;
+    }
   }
 }
 
 .tokenomics__title {
   font-size: 60px;
   line-height: 105%;
+  @media screen and (max-width: 768px) {
+    font-size: 34px;
+  }
 }
 
 .tokenomics__subtitle {
   font-size: 24px;
   line-height: 105%;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .tokenomics__statistics {
@@ -39,14 +60,20 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
-
   font-size: 26px;
   line-height: 105%;
+  @media screen and (max-width: 768px) {
+    margin-top: 38px;
+  }
 }
 
 .tokenomics__total {
   margin-top: 165px;
   position: relative;
+  z-index: 2;
+  @media screen and (max-width: 768px) {
+    margin-top: 41px;
+  }
 
   &::before {
     content: url("../../public/img/tokenomics/tokenomics_total_bg.png");
@@ -54,7 +81,11 @@
     bottom: -21px;
     left: -16px;
     mix-blend-mode: soft-light;
+    @media screen and (max-width: 768px) {
+      opacity: 0.5;
+    }
   }
+
   &::after {
     content: url("../../public/img/tokenomics/mark.png");
     position: absolute;
@@ -68,10 +99,17 @@
     font-size: 44px;
     line-height: 105%;
     color: #fff;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      font-size: 42px;
+    }
 
     &:first-of-type {
       font-size: 36px;
       color: rgba(255, 255, 255, 0.6);
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+      }
     }
   }
 }
