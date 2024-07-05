@@ -13,26 +13,26 @@
   }
 
   &::before {
-    content: url("../../public/img/buy/buy_stroke.png");
+    content: url("../public/img/buy/buy_stroke.png");
     position: absolute;
     top: 168px;
     right: 0;
     mix-blend-mode: overlay;
 
     @media screen and (max-width: 768px) {
-      content: url("../../public/img/buy/buy_stroke_mobile.png");
+      content: url("../public/img/buy/buy_stroke_mobile.png");
       top: auto;
       bottom: 0;
     }
   }
 
   &::after {
-    content: url("../../public/img/buy/buy_img.png");
+    content: url("../public/img/buy/buy_img.png");
     position: absolute;
     top: -67px;
     right: 0;
     @media screen and (max-width: 768px) {
-      content: url("../../public/img/buy/buy_img_mobile.png");
+      content: url("../public/img/buy/buy_img_mobile.png");
       top: auto;
       bottom: -6px;
     }
@@ -79,7 +79,7 @@
   }
 
   &::before {
-    content: url("../../public/img/buy/buy_mark.png");
+    content: url("../public/img/buy/buy_mark.png");
     position: absolute;
     top: -4px;
     left: 0;
@@ -104,12 +104,12 @@
   color: rgba(255, 255, 255, 0.9);
 
   &::before {
-    content: url("../../public/img/buy/buy_accent_bg.png");
+    content: url("../public/img/buy/buy_accent_bg.png");
     position: absolute;
     bottom: -9px;
     mix-blend-mode: overlay;
     @media screen and (max-width: 768px) {
-      content: url("../../public/img/buy/buy_accent_mobile.png");
+      content: url("../public/img/buy/buy_accent_mobile.png");
     }
   }
 }
