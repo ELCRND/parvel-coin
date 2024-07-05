@@ -56,6 +56,7 @@
 }
 
 .tokenomics__statistics {
+  max-width: 300px;
   margin-top: 154px;
   display: flex;
   flex-direction: column;
@@ -65,13 +66,18 @@
   @media screen and (max-width: 768px) {
     margin-top: 38px;
   }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .tokenomics__total {
   margin-top: 165px;
   position: relative;
-  z-index: 2;
   @media screen and (max-width: 768px) {
+    z-index: 2;
     margin-top: 41px;
   }
 
