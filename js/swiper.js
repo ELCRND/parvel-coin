@@ -1,7 +1,7 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
 const swiper = new Swiper(".roadmap__swiper", {
-  slidesPerView: 1.08,
+  slidesPerView: 1,
   spaceBetween: 15,
   speed: 400,
   grabCursor: true,

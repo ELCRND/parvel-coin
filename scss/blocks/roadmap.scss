@@ -97,15 +97,16 @@
 
 .roadmap__swiper {
   margin-top: 50px;
-  // position: absolute;
   overflow: hidden;
   @media screen and (max-width: 768px) {
     margin-top: 27px;
+    padding-right: 20px;
   }
 }
 
 .swiper-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .swiper-navigation {
