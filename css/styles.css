@@ -492,7 +492,6 @@ header {
   }
 }
 .about__persons .persons__toggler button {
-  border: 3px solid #6f6f6f;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -504,6 +503,8 @@ header {
   }
 }
 .about__persons .persons__toggler button img {
+  border: 3px solid #6f6f6f;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
   display: block;
@@ -549,7 +550,7 @@ header {
   margin-right: auto;
 }
 
-.persons__toggler button.active-btn {
+.persons__toggler button.active-btn img {
   border: 6px solid #4acf19;
 }
 
