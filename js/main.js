@@ -40,5 +40,5 @@ toggleBtns.forEach((btn) =>
 document.querySelector("#key-copy").addEventListener("click", () => {
   navigator.clipboard.writeText(key.getAttribute("data-key"));
   tooltip.classList.add("visible");
-  setTimeout(() => tooltip.classList.remove("visible"), 300);
+  setTimeout(() => tooltip.classList.remove("visible"), 400);
 });
