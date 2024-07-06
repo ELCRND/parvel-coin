@@ -32,3 +32,8 @@ body {
 .hidden {
   display: none !important;
 }
+
+.scroll-off {
+  max-height: 100vh;
+  overflow: hidden;
+}

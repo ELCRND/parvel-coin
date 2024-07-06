@@ -158,6 +158,11 @@ body {
   display: none !important;
 }
 
+.scroll-off {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 header {
   width: 100%;
   padding-top: 35px;
@@ -284,14 +289,13 @@ header {
   height: 100vh;
   padding: 19px 20px;
   position: absolute;
-  top: -1000px;
+  top: -100vh;
   left: 0;
-  translate: 0 -100%;
   z-index: 20;
   backdrop-filter: blur(20px);
   background: rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  transition: translate 500ms ease;
+  transition: top 500ms ease;
 }
 .header__menu span {
   font-size: 26px;
@@ -338,7 +342,6 @@ header {
 
 .header__menu.visible {
   top: 0;
-  translate: 0 0;
 }
 
 .hero {
