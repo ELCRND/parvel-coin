@@ -127,19 +127,23 @@
   display: flex;
   align-items: center;
   gap: 58px;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-
   line-height: 105%;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 
   #key {
     font-size: 26px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     position: relative;
     user-select: all;
     @media screen and (max-width: 1440px) {
       z-index: 2;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      word-wrap: break-word;
     }
 
     &::before {
@@ -154,7 +158,8 @@
       background-size: cover;
       background-position: center center;
       mix-blend-mode: soft-light;
-      @media screen and (max-width: 1440px) {
+
+      @media screen and (max-width: 768px) {
         display: none;
       }
     }
@@ -167,6 +172,12 @@
     transition: color 200ms ease;
     @media screen and (max-width: 1440px) {
       z-index: 2;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-top: 68px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &::before {
@@ -182,9 +193,6 @@
       background-position: center center;
       mix-blend-mode: overlay;
       filter: brightness(2);
-      @media screen and (max-width: 1440px) {
-        display: none;
-      }
     }
 
     &:active {
@@ -211,7 +219,13 @@
   font-weight: 700;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 500ms ease;
+  transition: all 500ms ease;
+
+  @media screen and (max-width: 768px) {
+    top: 50%;
+    right: 50%;
+    translate: 50% 100%;
+  }
 }
 
 .tokenomics__tooltip.visible {
