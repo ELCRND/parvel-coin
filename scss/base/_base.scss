@@ -18,6 +18,14 @@ body {
   background-color: var(--black);
 }
 
+::-moz-selection {
+  background: var(--green);
+}
+
+::selection {
+  background: var(--green);
+}
+
 .container {
   width: min(100%, 1280px);
   margin-left: auto;

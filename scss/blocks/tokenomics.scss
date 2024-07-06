@@ -137,6 +137,7 @@
     font-size: 26px;
     letter-spacing: 3%;
     position: relative;
+    user-select: all;
     @media screen and (max-width: 1440px) {
       z-index: 2;
     }
