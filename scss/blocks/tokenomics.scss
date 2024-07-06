@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 818px;
   padding-top: 50px;
-  padding-bottom: 86px;
+  padding-bottom: 50px;
   background: linear-gradient(180deg, rgb(49, 137, 17), rgb(20, 63, 4) 86.5%);
   position: relative;
   color: var(--white);
@@ -57,12 +57,14 @@
 
 .tokenomics__statistics {
   max-width: 300px;
-  margin-top: 154px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   gap: 23px;
   font-size: 26px;
   line-height: 105%;
+  position: relative;
+  z-index: 2;
   @media screen and (max-width: 768px) {
     margin-top: 38px;
   }
@@ -74,7 +76,7 @@
 }
 
 .tokenomics__total {
-  margin-top: 165px;
+  margin-top: 90px;
   position: relative;
   @media screen and (max-width: 768px) {
     z-index: 2;
@@ -118,4 +120,99 @@
       }
     }
   }
+}
+
+.tokenomics__code {
+  margin-top: 119px;
+  display: flex;
+  align-items: center;
+  gap: 58px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  line-height: 105%;
+
+  #key {
+    font-size: 26px;
+    letter-spacing: 3%;
+    position: relative;
+    @media screen and (max-width: 1440px) {
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      translate: 0 -45%;
+      min-width: 525px;
+      height: 87px;
+      background-image: url("../public/img/tokenomics/tokenomics_key_bg.png");
+      background-size: cover;
+      background-position: center center;
+      mix-blend-mode: soft-light;
+      @media screen and (max-width: 1440px) {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    font-size: 22px;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 200ms ease;
+    @media screen and (max-width: 1440px) {
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      translate: -35% -25%;
+      min-width: 116px;
+      height: 76px;
+      background-image: url("../public/img/tokenomics/tokenomics_btn_border.png");
+      background-size: cover;
+      background-position: center center;
+      mix-blend-mode: overlay;
+      filter: brightness(2);
+      @media screen and (max-width: 1440px) {
+        display: none;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.6);
+      &::before {
+        filter: brightness(1.5);
+      }
+    }
+  }
+}
+
+.tokenomics__tooltip {
+  width: 150px;
+  opacity: 0;
+  padding: 8px 6px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: 130% -50%;
+  z-index: 3;
+  text-transform: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms ease;
+}
+
+.tokenomics__tooltip.visible {
+  opacity: 1;
 }

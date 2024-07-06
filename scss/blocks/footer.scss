@@ -74,6 +74,12 @@
     background-color: var(--green);
     transition: filter 250ms ease;
 
+    &:first-of-type {
+      width: 120px;
+      padding: 6px 13px;
+      border-radius: 20px;
+    }
+
     svg {
       transition: all 250ms ease;
     }
