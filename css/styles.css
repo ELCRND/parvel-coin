@@ -1222,6 +1222,9 @@ header {
 }
 @media screen and (max-width: 768px) {
   .footer__socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: end;
     position: absolute;
     top: 33px;
     right: 20px;
@@ -1241,6 +1244,22 @@ header {
   width: 120px;
   padding: 6px 13px;
   border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__socials a:first-of-type {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__socials a:nth-child(2) {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__socials a:nth-child(3) {
+    grid-column: 3/4;
+  }
 }
 .footer__socials a svg {
   transition: all 250ms ease;
