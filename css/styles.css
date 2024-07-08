@@ -753,7 +753,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .tokenomics__code #key {
-    font-size: 18px;
+    font-size: 24px;
     word-wrap: break-word;
   }
 }
